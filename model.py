@@ -38,7 +38,7 @@ def retrieval_qa_chain(llm, prompt, db):
 
 #Loading the model
 def load_llm():
-    llm = HuggingFaceHub(repo_id="google/flan-t5-base", model_kwargs={"temperature":0.6, "max_length":512})
+    llm = HuggingFaceHub(repo_id="google/flan-t5-xxl", model_kwargs={"temperature":0.5, "max_length":512})
     return llm
 
 #QA Model Function
